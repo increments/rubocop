@@ -966,6 +966,10 @@ Rails/Delegate:
   Description: 'Prefer delegate method for delegations.'
   Enabled: true
 
+Rails/FallbackWithPresence:
+  Description: 'Prefer `obj.presence || something` to `obj.present? ? obj || something`.'
+  Enabled: true
+
 Rails/HasAndBelongsToMany:
   Description: 'Prefer has_many :through to has_and_belongs_to_many.'
   Enabled: true
