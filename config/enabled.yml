@@ -978,6 +978,10 @@ Rails/Output:
   Description: 'Checks for calls to puts, print, etc.'
   Enabled: true
 
+Rails/PresenceCheck:
+  Description: "Prefer ActiveSupport's `obj.present?/blank?` to `obj && obj.empty?`."
+  Enabled: true
+
 Rails/ReadWriteAttribute:
   Description: >-
                  Checks for read_attribute(:attr) and
