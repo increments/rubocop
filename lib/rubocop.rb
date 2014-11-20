@@ -1,6 +1,10 @@
 # encoding: utf-8
 
+original_verbose = $VERBOSE
+$VERBOSE = nil
 require 'parser/current'
+$VERBOSE = original_verbose
+
 require 'rainbow'
 # Rainbow 2.0 does not load the monkey-patch for String by default.
 require 'rainbow/ext/string' unless String.method_defined?(:color)
